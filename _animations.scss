@@ -1,0 +1,49 @@
+@-webkit-keyframes flip-horizontal-fwd {
+    0% {
+      -webkit-transform: translateZ(0) rotateX(0);
+              transform: translateZ(0) rotateX(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px) rotateX(-180deg);
+              transform: translateZ(160px) rotateX(-180deg);
+    }
+  }
+  @keyframes flip-horizontal-fwd {
+    0% {
+
+      -webkit-transform: translateZ(0) rotateX(0);
+              transform: translateZ(0) rotateX(0);
+    }
+    100% {
+      background-color: black;
+      -webkit-transform: translateZ(160px) rotateX(-180deg);
+              transform: translateZ(160px) rotateX(-180deg);
+    }
+  }
+
+
+
+
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0a7025, 0 0 40px #1c7107, 0 0 50px #29ef0f, 0 0 60px #0f712e, 0 0 70px #0c6e14;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  @-webkit-keyframes glowBox {
+    from {
+      box-shadow: 0 0 10px rgb(244, 62, 62), 0 0 20px rgb(95, 20, 20), 0 0 30px #e25d15, 0 0 40px #875110, 0 0 50px #ddd0d0, 0 0 60px #f4ede3, 0 0 70px #d2daed;
+    }
+    
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #c9e60d, 0 0 40px #d8f80e, 0 0 50px #8b9703, 0 0 60px #eea320, 0 0 70px #7ca502, 0 0 80px #f4a226;
+    }
+  }
+  @keyframes slide {
+    0% {transform:translateX(-100%);}
+    100% {transform:translateX(100%);}
+  }

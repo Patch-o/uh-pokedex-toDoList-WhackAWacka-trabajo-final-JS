@@ -1,0 +1,197 @@
+:root {
+  --ras: #ef3c06;
+  --ta: #1f6705;
+  --fa: #9b8600;
+  --ri: #0b0816;
+  --mak: #820c0c;
+  --onen: #cf7303;
+  --gris:#252121;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Goblin";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgb(253, 187, 45) 100%);
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--mak);
+  margin-bottom: 1rem;
+}
+
+#task-form {
+  display: flex;
+}
+
+input, button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#task-input {
+  flex: 1 1 0%;
+  background: radial-gradient(circle, rgb(251, 93, 63) 0%, rgb(243, 252, 70) 100%);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  color: var(--ta);
+  font-size: 1.25rem;
+}
+
+#task-input::-moz-placeholder {
+  color: var(--fa);
+}
+
+#task-input:-ms-input-placeholder {
+  color: var(--fa);
+}
+
+#task-input::placeholder {
+  color: var(--fa);
+}
+
+#task-submit {
+  color: var(--ras);
+  font-size: 1.25rem;
+  font-size: 700;
+  background-image: linear-gradient(to right, var(--ta), var(--fa));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  text-shadow: #090800 0px 10px 10px;
+  font-weight: 700;
+}
+
+#task-submit:hover {
+  opacity: 0.6;
+}
+
+#task-submit:active {
+  opacity: 0.4;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ta);
+  margin-bottom: 1rem;
+}
+
+.task-list .lista {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--ta);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.task-list .lista .contenido {
+  flex: 1 1 0%;
+}
+
+.task-list .lista .contenido .text {
+  color: var(--ta);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.task-list .lista .contenido .text:not(:-moz-read-only) {
+  color: var(--onen);
+}
+
+.task-list .lista .contenido .text:not(:read-only) {
+  color: var(--onen);
+}
+
+.task-list .lista .accion {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.lista .accion button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.lista .accion button:hover {
+  opacity: 0.6;
+}
+
+.lista .accion button:active {
+  opacity: 0.4;
+}
+
+.lista .accion .editar {
+  background-image: linear-gradient(to right, var(--fa), var(--onen));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lista .accion .borrar {
+  background-image: linear-gradient(to right, var(--ras), var(--onen));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pokemon {
+  position: absolute;
+  width: 100px;
+  right: 5%;
+}
+
+.mole {
+  position: absolute;
+  width: 100px;
+  left: 5%;
+}
+
+@font-face {
+  font-family: Karmatic-arcade;
+  src: url(./assets/ka1.ttf);
+}
+@font-face {
+  font-family: Goblin;
+  src: url(./assets/AGoblinAppears-o2aV.ttf);
+}/*# sourceMappingURL=toDo.css.map */

@@ -1,0 +1,120 @@
+@import "./animations";
+@import "./fonts";
+body {
+  width: 100%;
+  margin: 0;
+  //display: flex;
+  //flex-direction: column;
+
+  background-attachment: fixed;
+  background-size: 100%;
+
+  height: 26000px;
+  background: linear-gradient(
+    200deg,
+    #52065e 0%,
+    #0b8221 42%,
+    #766e00 71%,
+    white 100%
+  );
+}
+h {
+  font-family: Goblin;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.papa {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  margin-top: 5rem;
+  margin-block-end: 12rem;
+  margin-inline: 6rem;
+}
+.hijo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  align-items: center;
+}
+.papa:hover .hijo {
+  transform: rotateX(540deg) rotateY(720deg);
+}
+.pokemonA,
+.pokemonB {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: 8rem;
+  background-position-x: 12rem;
+  font-family: Goblin;
+  color: rgb(5, 80, 55);
+  text-shadow: rgb(255, 247, 3) 10px 10px 10px;
+  z-index: 1;
+  
+}
+.pokemonA {
+  background-image: url(https://66.media.tumblr.com/2c0f485a7b6c4c3e3ddd5bdb3d70794b/tumblr_mfluqxX5FE1rfjowdo1_540.gif);
+  background-size: 16.5rem;
+  width: 16.5rem;
+  color: rgb(6, 15, 18);
+  background-position-x: center;
+  font-size: 1.5rem;
+ 
+}
+.pokemonB {
+  transform: rotateX(540deg) scale3d(1.5, 1.5, 1.5) rotateY(360deg);
+  border: solid rgb(149, 157, 4) 10px;
+  border-style: ridge;
+  image-rendering: pixelated;
+  animation: glowBox 1s ease-in-out infinite alternate;
+
+  .pokeball {
+    position: absolute;
+    right: 95px;
+    width: 40%;
+    height: 30%;   
+    display: flex;
+    align-items: baseline;
+  }
+  .pokegif {
+    opacity: 70%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    height: 6vh;
+    width: 6vh;
+
+    left: 110px;
+    top: 380px;
+  }
+}
+.pokemon {
+  font-family: Karmatic-arcade;
+  font-size: 80px;
+  color: rgba(148, 2, 2, 0.616);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.mole {
+  position: absolute;
+  left:5%;
+  width: 100px;
+}
+.todo {
+  position: absolute;
+  right:5%;
+  width: 100px;
+}
